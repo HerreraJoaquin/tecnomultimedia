@@ -1,7 +1,7 @@
 //Herrera Joaquin, 92721/4
 //Comisión 3
 //tp2
-//https://youtu.be/iRF_0b0zoyY
+//Video: https://youtu.be/iRF_0b0zoyY
 
 
 PImage img;
