@@ -17,7 +17,7 @@ void mousePressed() {
     }
     
     if ( colisionConBotonCircular(300,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 2 -> 13");
+      println("flujo de estado 2 -> 13");
       estado = 13;
     }
     } else if ( estado==3) {
@@ -39,7 +39,7 @@ void mousePressed() {
     }
     
     if ( colisionConBotonCircular(300,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 5 -> 21");
+      println("flujo de estado 5 -> 23");
       estado = 23;
     }
   } else if ( estado==6) {
@@ -60,11 +60,11 @@ void mousePressed() {
       estado = 9;
     }
     if ( colisionConBotonCircular(50,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 9 -> 8");
+      println("flujo de estado 8 -> 30");
       estado = 30;
     }
     if ( colisionConBotonCircular(300,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 9 -> 8");
+      println("flujo de estado 8 -> 36");
       estado = 36;
     }
   } else if ( estado==9) {
@@ -87,8 +87,8 @@ void mousePressed() {
     
   } else if ( estado==12) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 12 -> 0");
-      estado = 0;
+      println("flujo de estado 12 -> 39");
+      estado = 39;
     }
     
   } else if ( estado==13) {
@@ -110,7 +110,7 @@ void mousePressed() {
     }
     
     if ( colisionConBotonCircular(300,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 15 -> 26");
+      println("flujo de estado 15 -> 25");
       estado = 25;
     }
   } else if ( estado==16) {
@@ -131,11 +131,11 @@ void mousePressed() {
       estado = 19;
     }
     if ( colisionConBotonCircular(50,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 9 -> 8");
+      println("flujo de estado 18 -> 33");
       estado = 33;
     }
     if ( colisionConBotonCircular(300,550,50) ) {
-      println("CLICK en boton de la izquierda (flujo de estado 9 -> 8");
+      println("flujo de estado 18 -> 27");
       estado = 27;
     }
    } else if ( estado==19) {
@@ -158,8 +158,8 @@ void mousePressed() {
     
    } else if ( estado==22) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 22 -> 00");
-      estado = 0;
+      println("flujo de estado 22 -> 39");
+      estado = 39;
     }
     
    } else if ( estado==23) {
@@ -170,13 +170,13 @@ void mousePressed() {
     
    } else if ( estado==24) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 24 -> 25");
+      println("flujo de estado 24 -> 7");
       estado = 7;
     }
     
    } else if ( estado==25) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 24 -> 25");
+      println("flujo de estado 25 -> 26");
       estado = 26;
     }
     
@@ -188,20 +188,20 @@ void mousePressed() {
     
    } else if ( estado==27) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 26 -> 17");
+      println("flujo de estado 27 -> 28");
       estado = 28;
     }
     
    } else if ( estado==28) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 26 -> 17");
+      println("flujo de estado 28 -> 29");
       estado = 29;
     }
     
    } else if ( estado==29) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 26 -> 17");
-      estado = 0;
+      println("flujo de estado 29 -> 39");
+      estado = 39;
     }
     
    } else if ( estado==30) {
@@ -212,49 +212,55 @@ void mousePressed() {
     
    } else if ( estado==31) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 31 -> 32");
       estado = 32;
     }
     
    } else if ( estado==32) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
-      estado = 0;
+      println("flujo de estado 32 -> 39");
+      estado = 39;
     }
     
    } else if ( estado==33) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 33 -> 34");
       estado = 34;
     }
     
    } else if ( estado==34) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 34 -> 35");
       estado = 35;
     }
     
    } else if ( estado==35) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
-      estado = 0;
+      println("flujo de estado 35 -> 39");
+      estado = 39;
     }
     
    } else if ( estado==36) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 36 -> 37");
       estado = 37;
     }
     
    } else if ( estado==37) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 37 -> 38");
       estado = 38;
     }
     
    } else if ( estado==38) {
     if ( colisionConBotonCircular(550,550,50) ) {
-      println("flujo de estado 30 -> 31");
+      println("flujo de estado 38 -> 39");
+      estado = 39;
+    }
+    
+   } else if ( estado==39) {
+    if ( colisionConBotonCircular(550,550,50) ) {
+      println("flujo de estado 39 -> 00");
       estado = 0;
     }
     
