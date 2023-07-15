@@ -1,6 +1,6 @@
 PImage[] fondos;
 String[] textos;
-int cantImagenes = 31;
+int cantImagenes = 32;
 int estado;
 
 
@@ -8,7 +8,7 @@ void setup() {
   size(600, 600);
 
  
-  fondos = new PImage[31];
+  fondos = new PImage[32];
   
   for ( int i=0; i<cantImagenes; i++ ) {
     fondos[i] = loadImage("fondo_"+nf(i, 2)+".jpg");
@@ -17,28 +17,28 @@ void setup() {
   }
 
   
-  textos = new String[27];
+  textos = new String[28];
   
-  textos[0] = "Hace mucho tiempo tres cerditos decidierón hacer sus casas,\n el menor hizo una casa de paja, el del medio una de madera y el mayor una de ladrillo";
-  textos[1] = "Pero de repente llega un lobo feróz para comerse a los cerditos, a lo que estos deciden esconderse en sus casas";
-  textos[2] = "El lobo se encontraba frente a la casa de paja, ahora solo tenía que hacer salir al cerdito. Estaba entre soplar la casa y volar todo por los aires o quemarla y acoralar al cerdito";
+  textos[0] = "Hace mucho tiempo tres cerditos decidieron hacer sus casas,\n el menor hizo una casa de paja, el del medio una de madera y el mayor una de ladrillo";
+  textos[1] = "Pero de repente llega un lobo feroz para comerse a los cerditos, a lo que estos deciden esconderse en sus casas";
+  textos[2] = "El lobo se encontraba frente a la casa de paja, ahora solo tenía que hacer salir al cerdito. Estaba entre soplar la casa y volar todo por los aires o quemarla y acorralar al cerdito";
   textos[3] = "Y el lobo sopló y sopló y la casa derribó";
   textos[4] = "El menor de los cerditos fue corriendo a buscar refugio con su hermano en la casa de madera";
   textos[5] = "El lobo se encontraba frente a la casa de madera. Para sacarlos estaba entre soplar la casa y volar todo por los aires o lanzar un frasco con termitas que se comerían toda la casa";
   textos[6] = "Y el lobo sopló y sopló y la casa derribó";
-  textos[7] = "Entonces los cerditos decidierón refujiarse con su hermano mayor en la casa de ladrillos";
-  textos[8] = "El lobo se encontraba frente a la casa de ladrillos. Para sacarlos estaba entre soplar la casa, cavar un tunel para entrar en la casa o solo esperar a que los cerditos se rindieran y salieran por su cuenta ";
+  textos[7] = "Entonces los cerditos decidieron refugiarse con su hermano mayor en la casa de ladrillos";
+  textos[8] = "El lobo se encontraba frente a la casa de ladrillos. Para sacarlos estaba entre soplar la casa, cavar un túnel para entrar en la casa o solo esperar a que los cerditos se rindieran y salieran por su cuenta ";
   textos[9] = "Y el lobo sopló y sopló y la casa no derribó";
   textos[10] = "El lobo optó por entrar por la chimenea ";
-  textos[11] = "Lo que no esperaba es que los cerditos ya venían venir esto, así que le pusierón una olla con agua hirviendo bajo la chimenea";
+  textos[11] = "Lo que no esperaba es que los cerditos ya venían venir esto, así que le pusieron una olla con agua hirviendo bajo la chimenea";
   textos[12] = "El lobo corrió hacia el bosque lleno de dolor por las quemaduras y nunca más volvió a molestar a esos astutos cerditos. \n FIN";
-  textos[13] = "El lobo quemó la casa de paja, esperando afuera al cerdito para comercelo en cuanto saliera y en cuanto el cerdito apareció...";
+  textos[13] = "El lobo quemó la casa de paja, esperando afuera al cerdito para comérselo en cuanto saliera y en cuanto el cerdito apareció...";
   textos[14] = "¡ZAAASSS! un cerdito menos y un poco menos de hambre tenía el lobo";
   textos[15] = "El lobo se encontraba frente a la casa de madera. Para sacarlos estaba entre soplar la casa y volar todo por los aires o lanzar un frasco con termitas que se comerían toda la casa";
   textos[16] = "El lobo opto por usar un frasco de termitas que casualmente siempre lleva consigo para ocasiones como esta";
-  textos[17] = "Cuando las termitas se comierón todas las paredes y ya no había lugar donde esconderse la unica opción para los cerditos era escapar";
-  textos[18] = "Cuando las termitas se comierón todas las paredes y ya no había lugar donde esconderse la unica opción para el cerdito era escapar";
-  textos[19] = "Entonces el cerdito decidió refujiarse con su hermano mayor en la casa de ladrillos";
+  textos[17] = "Cuando las termitas se comieron todas las paredes y ya no había lugar donde esconderse la única opción para los cerditos era escapar";
+  textos[18] = "Cuando las termitas se comieron todas las paredes y ya no había lugar donde esconderse la única opción para el cerdito era escapar";
+  textos[19] = "Entonces el cerdito decidió refugiarse con su hermano mayor en la casa de ladrillos";
   textos[20] = "El lobo decidió esperar a que los cerditos salieran, pero contrario a lo que esperaba estos no tenían miedo, sino que estaban armados de valor y entonces...";
   textos[21] = "LOS CERDITOS MOLIERON A PALOS AL LOBO CON TODA LA IRA QUE TENÍAN";
   textos[22] = "De esa manera los cerditos ganaron y consiguieron una nueva alfombra de piel de lobo";
@@ -46,6 +46,7 @@ void setup() {
   textos[24] = "Y el lobo cavó y cavó";
   textos[25] = "Y una vez ya adentro de la casa el lobo no les dio la oportunidad a los cerditos para escapar y entonces...";
   textos[26] = "¡ZAAASSS! ahora el lobo ya no tenía hambre";
+  textos[27] = "Gracias por jugar, reinicia y toma otro camino para ver un final diferente";
 }
 
 void draw() {
@@ -104,7 +105,7 @@ void draw() {
     
   } else  if ( estado == 12 ) {
     dibujaPantalla( fondos[12], textos[12] );
-    dibujaBotonCircular( 550,550,50, "REINICIAR");
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
     
   } else  if ( estado == 13 ) {
     dibujaPantalla( fondos[13], textos[13] );
@@ -146,7 +147,7 @@ void draw() {
     
   } else  if ( estado == 22 ) {
     dibujaPantalla( fondos[12], textos[12] );
-    dibujaBotonCircular( 550,550,50, "REINICIAR");
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
   
   } else  if ( estado == 23 ) {
     dibujaPantalla( fondos[20], textos[16] );
@@ -174,7 +175,7 @@ void draw() {
     
   } else  if ( estado == 29 ) {
     dibujaPantalla( fondos[14], textos[26] );
-    dibujaBotonCircular( 550,550,50, "REINICIAR");
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
     
   } else  if ( estado == 30 ) {
     dibujaPantalla( fondos[23], textos[20] );
@@ -186,7 +187,7 @@ void draw() {
     
   } else  if ( estado == 32 ) {
     dibujaPantalla( fondos[25], textos[22] );
-    dibujaBotonCircular( 550,550,50, "REINICIAR");
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
     
   } else  if ( estado == 33 ) {
     dibujaPantalla( fondos[26], textos[20] );
@@ -198,7 +199,7 @@ void draw() {
     
   } else  if ( estado == 35 ) {
     dibujaPantalla( fondos[27], textos[22] );
-    dibujaBotonCircular( 550,550,50, "REINICIAR");
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
     
   } else  if ( estado == 36 ) {
     dibujaPantalla( fondos[28], textos[24] );
@@ -210,6 +211,10 @@ void draw() {
     
   } else  if ( estado == 38 ) {
     dibujaPantalla( fondos[14], textos[26] );
+    dibujaBotonCircular( 550,550,50, "SIGUIENTE");
+    
+  } else  if ( estado == 39 ) {
+    dibujaPantalla( fondos[31], textos[27] );
     dibujaBotonCircular( 550,550,50, "REINICIAR");
     
   } 
