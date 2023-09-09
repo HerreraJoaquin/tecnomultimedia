@@ -12,7 +12,7 @@ function inicio() {
   push();
   fill(0, 255, 0);
   textSize(30);
-  text("SPACE INVADERS \n DE LA SALADA", width/2, height/4);
+  text("SPACE INVADERS ", width/2, height/4);
   pop();
   textSize(15);
   text("Objetivo: acaba con todos los aliens y ganarás el juego.\n No dejes que ningún alien de la fila superior supere la linea verde, si lo haces, pierdes. ", width/2, height/2);
