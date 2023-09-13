@@ -10,10 +10,10 @@
 //personaje
 
 var p1x = 300;
-var p1y = 475;
+var p1y = 550;
 var pWidth = 50;
 var pHeight = 30;
-var pSpeed = 3;
+var pSpeed = 4.5;
 var derecha = false;
 var izquierda = false;
 
@@ -34,7 +34,7 @@ var aHeight = 40;
 //Rectangulo que define el movimiento de los aliens
 var movalposx = 50;
 var movalposy = 100;
-var velx = 0.5;
+var velx = 0.8;
 
 var movalWidth = 520; //Width  del rectangulo = 530+40-50 (posX del ultimo alien + width de los aliens - posX del primer alien)  
 var movalHeight = 100;//Height  del rectangulo = 210+40-150 (posY del ultimo alien + height de los aliens - posY del primer alien)  
@@ -45,7 +45,7 @@ var r1y = p1y;
 var r1Position = 0;
 var rWidth = 5;
 var rHeight = 15;
-var rSpeed = 7;
+var rSpeed = 9;
 var fire = false;
 
 //contador
@@ -88,12 +88,16 @@ function draw() {
   if (estado == 0) {
     score = 0;
     reset();
+    p1x = 300;
+    p1y = 550;
+    r1Position = 0;
+
     
   } else if ( estado == 1 ) {
     if (score >= 18) {
       estado = 3;
     } else if ( estado == 1 ) {
-    if (movalposy >= 395) {
+    if (movalposy >= 500) {
       estado = 2;
     }
   }
