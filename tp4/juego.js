@@ -6,7 +6,7 @@ function juego() {
   
   push();
   stroke(0, 255, 0);
-  line(0,395,600,395);
+  line(0,477,600,477);
   pop();
   
   rockets();
